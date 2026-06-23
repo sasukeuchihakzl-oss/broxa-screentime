@@ -23,10 +23,17 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Envia seu tempo de uso pro Broxa Games automaticamente."
+            android:text="Envia seu tempo de uso pro Broxa e te alerta das missões atrasadas."
             android:textColor="#9aa"
             android:textSize="13sp"
             android:paddingBottom="16dp" />
+
+        <Button
+            android:id="@+id/btnUpdate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:text="🔄 ATUALIZAR APP (nova versão!)" />
 
         <TextView
             android:layout_width="match_parent"
@@ -61,6 +68,36 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="2. Sincronizar agora" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Alertas de missão atrasada"
+            android:textColor="#FFD24A"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:paddingTop="18dp" />
+
+        <TextView
+            android:id="@+id/txtAlertStatus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="..."
+            android:textColor="#9aa"
+            android:textSize="13sp"
+            android:paddingBottom="8dp" />
+
+        <Button
+            android:id="@+id/btnNotif"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Permitir notificações" />
+
+        <Button
+            android:id="@+id/btnOverlay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Permitir abrir o jogo sozinho" />
 
         <TextView
             android:id="@+id/txtResult"
