@@ -9,24 +9,34 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:padding="20dp">
+        android:gravity="center_horizontal"
+        android:padding="24dp">
+
+        <ImageView
+            android:layout_width="96dp"
+            android:layout_height="96dp"
+            android:src="@drawable/app_icon"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="12dp" />
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="📱 Broxa — Tempo de Tela"
+            android:text="Broxa Games"
             android:textColor="#FFD24A"
-            android:textSize="20sp"
+            android:textSize="22sp"
             android:textStyle="bold"
+            android:gravity="center"
             android:paddingBottom="6dp" />
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Envia seu tempo de uso pro Broxa e te alerta das missões atrasadas."
+            android:text="Te avisa quando uma missão atrasar."
             android:textColor="#9aa"
-            android:textSize="13sp"
-            android:paddingBottom="16dp" />
+            android:textSize="14sp"
+            android:gravity="center"
+            android:paddingBottom="24dp" />
 
         <Button
             android:id="@+id/btnUpdate"
@@ -46,67 +56,22 @@
             android:id="@+id/spinnerName"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="16dp" />
+            android:layout_marginBottom="20dp" />
+
+        <Button
+            android:id="@+id/btnAtivar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ATIVAR ALERTAS" />
 
         <TextView
             android:id="@+id/txtStatus"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="..."
-            android:textColor="#ddd"
-            android:textSize="14sp"
-            android:paddingBottom="12dp" />
-
-        <Button
-            android:id="@+id/btnPerm"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="1. Conceder acesso ao uso" />
-
-        <Button
-            android:id="@+id/btnSync"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="2. Sincronizar agora" />
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Alertas de missão atrasada"
-            android:textColor="#FFD24A"
-            android:textSize="15sp"
-            android:textStyle="bold"
-            android:paddingTop="18dp" />
-
-        <TextView
-            android:id="@+id/txtAlertStatus"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="..."
-            android:textColor="#9aa"
-            android:textSize="13sp"
-            android:paddingBottom="8dp" />
-
-        <Button
-            android:id="@+id/btnNotif"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Permitir notificações" />
-
-        <Button
-            android:id="@+id/btnOverlay"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Permitir abrir o jogo sozinho" />
-
-        <TextView
-            android:id="@+id/txtResult"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text=""
             android:textColor="#22DDFF"
-            android:textSize="13sp"
-            android:paddingTop="16dp"
-            android:fontFamily="monospace" />
+            android:textSize="14sp"
+            android:gravity="center"
+            android:paddingTop="20dp" />
     </LinearLayout>
 </ScrollView>
